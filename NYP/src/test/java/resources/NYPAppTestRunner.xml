@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android test suite on Real Device">
+
+    <parameter name="OS" value="Android"/>
+    <parameter name="appType" value="Phone"/>
+    <parameter name="deviceType" value="RealDevice"/>
+    <parameter name="deviceName" value="Essential Phone"/>
+    <parameter name="version" value="5.1.1"/>
+
+    <test name="Homepage" preserve-order="true">
+        <classes>
+            <class name="Android.NotificationTest"/>
+            <!--<class name="Android.MenuPageTest"/>-->
+            <!--<class name="Android.EnlargeTextPageTest"/>-->
+            <!--<class name="Android.RefreshHomePageTest"/>-->
+            <!--<class name="Android.SearchPageTest"/>-->
+        </classes>
+    </test>
+</suite>
